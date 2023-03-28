@@ -44,7 +44,7 @@ End Class
 
 ```
 
-![RichText_Image](RichText_Image.png)
+![RichText_Image](RichText_Image.jpg)
 
 You can download the example from [GitHub](https://github.com/SyncfusionExamples/How-to-display-rich-text-in-WinForms-DataGrid-SfDataGrid-)
 
