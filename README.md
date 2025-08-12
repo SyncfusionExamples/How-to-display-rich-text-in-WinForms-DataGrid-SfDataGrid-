@@ -1,7 +1,9 @@
-# How to display rich text in WinForms DataGrid (SfDataGrid)?
-This example explains how to display rich text in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid).
+# How to display rich text in WinForms DataGrid?
+This example explains how to display rich text in WinForms DataGrid.
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) doesn't have direct support to display RichText’s in the [GridTextColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridTextColumn.html). However, it is possible to achieve this by overriding the [OnRender](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridTextBoxCellRenderer.html#Syncfusion_WinForms_DataGrid_Renderers_GridTextBoxCellRenderer_OnRender_System_Drawing_Graphics_System_Drawing_Rectangle_System_String_Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Syncfusion_WinForms_DataGrid_DataColumnBase_Syncfusion_WinForms_GridCommon_ScrollAxis_RowColumnIndex_) method in [GridTextBoxCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridTextBoxCellRenderer.html).
+
+### C#
 
 ```c#
 //customize the TextBoxCellRenderer
@@ -24,6 +26,8 @@ public class GridRichTextCellRenderer : GridTextBoxCellRenderer
 
 ```
 
+### VB
+
 ```VB
 'customize the TextBoxCellRenderer 
 Me.sfDataGrid1.CellRenderers.Remove("TextBox")
@@ -45,8 +49,6 @@ End Class
 ```
 
 ![RichText_Image](RichText_Image.jpg)
-
-You can download the example from [GitHub](https://github.com/SyncfusionExamples/How-to-display-rich-text-in-WinForms-DataGrid-SfDataGrid-)
 
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
